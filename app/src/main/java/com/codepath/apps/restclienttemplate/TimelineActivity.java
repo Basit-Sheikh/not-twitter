@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -69,6 +70,8 @@ public class TimelineActivity extends AppCompatActivity {
         {
             Toast.makeText(this, "compose", Toast.LENGTH_SHORT).show();
         }
+        Intent intent = new Intent(this, ComposeActivity.class);
+        startActivity(intent);
         return true;
     }
 
